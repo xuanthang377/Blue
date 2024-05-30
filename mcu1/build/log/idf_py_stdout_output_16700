@@ -1,0 +1,185 @@
+[1/14] cmd.exe /C "cd /D E:\23-5\mcu1\build && E:\Student\Software\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/spiffsgen.py 0x20000 E:/23-5/mcu1/font E:/23-5/mcu1/build/storage0.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[2/14] cmd.exe /C "cd /D E:\23-5\mcu1\build && E:\Student\Software\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/spiffsgen.py 0x10000 E:/23-5/mcu1/icons E:/23-5/mcu1/build/storage1.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[3/14] cmd.exe /C "cd /D E:\23-5\mcu1\build && E:\Student\Software\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/spiffsgen.py 0xb0000 E:/23-5/mcu1/images E:/23-5/mcu1/build/storage2.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[4/14] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D E:\23-5\mcu1\build\bootloader\esp-idf\esptool_py && E:\Student\Software\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/23-5/mcu1/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5030 bytes. 0x2fd0 bytes (37%) free.
+[5/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/myDO.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/myDO.c.obj 
+ccache E:\Student\Software\Espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\bin\xtensa-esp32s3-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -IE:/23-5/mcu1/build/config -IE:/23-5/mcu1/main -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/newlib/platform_include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include/freertos -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32s3/. -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32s3/private_include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/heap/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/log/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/soc/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/. -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/hal/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/hal/platform_port/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/soc -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/include/private -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps/sntp -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/lwip/src/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include/arch -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_ringbuf/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/driver/deprecated -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/driver/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_pm/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/port/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/library -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/esp_crt_bundle/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_app_format/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/bootloader_flash/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_partition/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/app_update/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/pthread/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_timer/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/app_trace/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_event/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/nvs_flash/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/vfs/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_netif/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/port/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/esp_supplicant/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_wifi/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/unity/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/unity/unity/src -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/cmock/CMock/src -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/console -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/http_parser -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls/esp-tls-crypto -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/interface -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/deprecated/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_eth/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/xtensa -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hid/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/tcp_transport/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_client/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_server/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_https_ota/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/interface -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/protobuf-c/protobuf-c -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/common -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/security -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/transports -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_local_ctrl/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_psram/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include/port/xtensa -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/wear_levelling/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/sdmmc/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/diskio -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/vfs -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/src -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/ieee802154/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/json/cJSON -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/mqtt/esp-mqtt/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/perfmon/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/touch_element/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/usb/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/wifi_provisioning/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=E:/23-5/mcu1=. -fmacro-prefix-map=E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/myDO.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\myDO.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/myDO.c.obj -c E:/23-5/mcu1/main/myDO.c
+In file included from e:\23-5\mcu1\lib\mydo.h:21,
+                 from E:/23-5/mcu1/main/myDO.c:9:
+E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from E:/23-5/mcu1/main/myDO.c:17:
+e:\23-5\mcu1\lib\ads1115.h:57:26: warning: excess elements in array initializer
+   57 | #define ADS111X_ADDR_VCC 0x49 //!< I2C device address with ADDR pin connected to VCC
+      |                          ^~~~
+E:/23-5/mcu1/main/myDO.c:25:5: note: in expansion of macro 'ADS111X_ADDR_VCC'
+   25 |     ADS111X_ADDR_VCC
+      |     ^~~~~~~~~~~~~~~~
+e:\23-5\mcu1\lib\ads1115.h:57:26: note: (near initialization for 'addr')
+   57 | #define ADS111X_ADDR_VCC 0x49 //!< I2C device address with ADDR pin connected to VCC
+      |                          ^~~~
+E:/23-5/mcu1/main/myDO.c:25:5: note: in expansion of macro 'ADS111X_ADDR_VCC'
+   25 |     ADS111X_ADDR_VCC
+      |     ^~~~~~~~~~~~~~~~
+E:/23-5/mcu1/main/myDO.c: In function 'init_param_DO':
+E:/23-5/mcu1/main/myDO.c:54:32: warning: passing argument 1 of 'read_nvs' makes integer from pointer without a cast [-Wint-conversion]
+   54 |                 err = read_nvs(pnvs_handle,"storage", DO_0_VAL_ADDR, (uint32_t *)&DO_V0);
+      |                                ^~~~~~~~~~~
+      |                                |
+      |                                nvs_handle_t * {aka long unsigned int *}
+In file included from e:\23-5\mcu1\lib\mydo.h:24,
+                 from E:/23-5/mcu1/main/myDO.c:9:
+e:\23-5\mcu1\lib\nvs_interface.h:21:33: note: expected 'nvs_handle_t' {aka 'long unsigned int'} but argument is of type 'nvs_handle_t *' {aka 'long unsigned int *'}
+   21 | esp_err_t read_nvs(nvs_handle_t nvs_handle
+      |                    ~~~~~~~~~~~~~^~~~~~~~~~
+E:/23-5/mcu1/main/myDO.c:68:32: warning: passing argument 1 of 'read_nvs' makes integer from pointer without a cast [-Wint-conversion]
+   68 |                 err = read_nvs(pnvs_handle,"storage", DO_100_VAL_ADDR, (uint32_t *)&DO_V100);
+      |                                ^~~~~~~~~~~
+      |                                |
+      |                                nvs_handle_t * {aka long unsigned int *}
+In file included from e:\23-5\mcu1\lib\mydo.h:24,
+                 from E:/23-5/mcu1/main/myDO.c:9:
+e:\23-5\mcu1\lib\nvs_interface.h:21:33: note: expected 'nvs_handle_t' {aka 'long unsigned int'} but argument is of type 'nvs_handle_t *' {aka 'long unsigned int *'}
+   21 | esp_err_t read_nvs(nvs_handle_t nvs_handle
+      |                    ~~~~~~~~~~~~~^~~~~~~~~~
+E:/23-5/mcu1/main/myDO.c: In function 'DO_Calib':
+E:/23-5/mcu1/main/myDO.c:93:21: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '400' to '144' [-Woverflow]
+   93 |         uint8_t i = 400;           // lower power consumption
+      |                     ^~~
+E:/23-5/mcu1/main/myDO.c:96:13: warning: unused variable 'buf' [-Wunused-variable]
+   96 |         int buf [400];
+      |             ^~~
+E:/23-5/mcu1/main/myDO.c:93:17: warning: unused variable 'i' [-Wunused-variable]
+   93 |         uint8_t i = 400;           // lower power consumption
+      |                 ^
+E:/23-5/mcu1/main/myDO.c: In function 'get_DO':
+E:/23-5/mcu1/main/myDO.c:166:34: warning: unused variable 'voltage' [-Wunused-variable]
+  166 |                         uint32_t voltage;
+      |                                  ^~~~~~~
+E:/23-5/mcu1/main/myDO.c:164:34: warning: unused variable 'ADC_RAW' [-Wunused-variable]
+  164 |                         uint32_t ADC_RAW[100];
+      |                                  ^~~~~~~
+At top level:
+E:/23-5/mcu1/main/myDO.c:32:14: warning: 'gain_val' defined but not used [-Wunused-variable]
+   32 | static float gain_val;
+      |              ^~~~~~~~
+E:/23-5/mcu1/main/myDO.c:29:18: warning: 'devices' defined but not used [-Wunused-variable]
+   29 | static i2c_dev_t devices[CONFIG_EXAMPLE_DEV_COUNT];
+      |                  ^~~~~~~
+E:/23-5/mcu1/main/myDO.c:23:22: error: 'addr' defined but not used [-Werror=unused-const-variable=]
+   23 | static const uint8_t addr[CONFIG_EXAMPLE_DEV_COUNT] = {
+      |                      ^~~~
+cc1.exe: some warnings being treated as errors
+[6/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+ccache E:\Student\Software\Espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\bin\xtensa-esp32s3-elf-gcc.exe -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -IE:/23-5/mcu1/build/config -IE:/23-5/mcu1/main -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/newlib/platform_include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include/freertos -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/freertos/esp_additions/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/include/soc/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32s3/. -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hw_support/port/esp32s3/private_include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/heap/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/log/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/soc/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/. -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/soc/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/hal/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/hal/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/hal/platform_port/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/include/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_rom/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_common/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/soc -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_system/port/include/private -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/xtensa/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/include/apps/sntp -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/lwip/src/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/lwip/port/esp32/include/arch -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_ringbuf/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/efuse/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/driver/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/driver/deprecated -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/driver/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_pm/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/port/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/mbedtls/library -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/mbedtls/esp_crt_bundle/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_app_format/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/bootloader_support/bootloader_flash/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_partition/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/app_update/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/pthread/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_timer/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/app_trace/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_event/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/nvs_flash/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_phy/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/vfs/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_netif/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/port/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/wpa_supplicant/esp_supplicant/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_wifi/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/unity/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/unity/unity/src -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/cmock/CMock/src -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/console -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/http_parser -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp-tls/esp-tls-crypto -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/interface -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/esp32s3/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_adc/deprecated/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_eth/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/xtensa -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_gdbstub/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_hid/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/tcp_transport/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_client/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_http_server/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_https_ota/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_lcd/interface -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/protobuf-c/protobuf-c -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/common -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/security -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/protocomm/include/transports -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_local_ctrl/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esp_psram/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/espcoredump/include/port/xtensa -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/wear_levelling/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/sdmmc/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/diskio -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/vfs -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/fatfs/src -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/idf_test/include/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/ieee802154/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/json/cJSON -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/mqtt/esp-mqtt/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/perfmon/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/touch_element/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/ulp/ulp_common/include/esp32s3 -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/usb/include -IE:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/wifi_provisioning/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=E:/23-5/mcu1=. -fmacro-prefix-map=E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0.2-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c E:/23-5/mcu1/main/main.c
+In file included from E:/23-5/mcu1/main/main.c:16:
+E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+In file included from e:\23-5\mcu1\lib\myph.h:22,
+                 from E:/23-5/mcu1/main/main.c:28:
+E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:30:
+e:\23-5\mcu1\lib\ads1115.h:57:26: warning: excess elements in array initializer
+   57 | #define ADS111X_ADDR_VCC 0x49 //!< I2C device address with ADDR pin connected to VCC
+      |                          ^~~~
+E:/23-5/mcu1/main/main.c:61:5: note: in expansion of macro 'ADS111X_ADDR_VCC'
+   61 |     ADS111X_ADDR_VCC
+      |     ^~~~~~~~~~~~~~~~
+e:\23-5\mcu1\lib\ads1115.h:57:26: note: (near initialization for 'addr')
+   57 | #define ADS111X_ADDR_VCC 0x49 //!< I2C device address with ADDR pin connected to VCC
+      |                          ^~~~
+E:/23-5/mcu1/main/main.c:61:5: note: in expansion of macro 'ADS111X_ADDR_VCC'
+   61 |     ADS111X_ADDR_VCC
+      |     ^~~~~~~~~~~~~~~~
+E:/23-5/mcu1/main/main.c: In function 'measure':
+E:/23-5/mcu1/main/main.c:86:40: warning: passing argument 2 of 'ads111x_get_value' from incompatible pointer type [-Wincompatible-pointer-types]
+   86 |     if (ads111x_get_value(&devices[n], &raw) == ESP_OK)
+      |                                        ^~~~
+      |                                        |
+      |                                        int32_t * {aka long int *}
+In file included from E:/23-5/mcu1/main/main.c:30:
+e:\23-5\mcu1\lib\ads1115.h:217:54: note: expected 'int16_t *' {aka 'short int *'} but argument is of type 'int32_t *' {aka 'long int *'}
+  217 | esp_err_t ads111x_get_value(i2c_dev_t *dev, int16_t *value);
+      |                                             ~~~~~~~~~^~~~~
+E:/23-5/mcu1/main/main.c:97:17: error: too many arguments to function 'get_DO'
+   97 |     float ok2 = get_DO(nvsHandle, raw, 3300.0,  26400.0);
+      |                 ^~~~~~
+In file included from E:/23-5/mcu1/main/main.c:32:
+e:\23-5\mcu1\lib\mydo.h:46:7: note: declared here
+   46 | float get_DO(nvs_handle_t nvsHandle, float ADC_VREF, float ADC_resolution);
+      |       ^~~~~~
+E:/23-5/mcu1/main/main.c: In function 'GPS':
+E:/23-5/mcu1/main/main.c:132:14: warning: variable 'gps_data' set but not used [-Wunused-but-set-variable]
+  132 |     GPS_data gps_data;
+      |              ^~~~~~~~
+E:/23-5/mcu1/main/main.c: In function 'sd_task':
+E:/23-5/mcu1/main/main.c:146:25: warning: passing argument 1 of 'sprintf' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  146 |                 sprintf(name_file, "log_3_7");
+      |                         ^~~~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:1:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\stdio.h:244:18: note: expected 'char * restrict' but argument is of type 'volatile char *'
+  244 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+E:/23-5/mcu1/main/main.c:149:25: warning: passing argument 1 of 'sprintf' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  149 |                 sprintf(name_file, "null.txt");
+      |                         ^~~~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:1:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\stdio.h:244:18: note: expected 'char * restrict' but argument is of type 'volatile char *'
+  244 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+E:/23-5/mcu1/main/main.c:151:16: warning: passing argument 1 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  151 |         strcpy(buff_sd, buff);
+      |                ^~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:2:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\string.h:38:18: note: expected 'char * restrict' but argument is of type 'volatile char *'
+   38 | char    *strcpy (char *__restrict, const char *__restrict);
+      |                  ^
+E:/23-5/mcu1/main/main.c:151:25: warning: passing argument 2 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  151 |         strcpy(buff_sd, buff);
+      |                         ^~~~
+In file included from E:/23-5/mcu1/main/main.c:2:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\string.h:38:36: note: expected 'const char * restrict' but argument is of type 'volatile char *'
+   38 | char    *strcpy (char *__restrict, const char *__restrict);
+      |                                    ^
+E:/23-5/mcu1/main/main.c:152:16: warning: passing argument 1 of 'strcat' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  152 |         strcat(buff_sd, "\n");
+      |                ^~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:2:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\string.h:34:18: note: expected 'char * restrict' but argument is of type 'volatile char *'
+   34 | char    *strcat (char *__restrict, const char *__restrict);
+      |                  ^
+E:/23-5/mcu1/main/main.c:154:39: warning: passing argument 1 of 'sd_write_file' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  154 |         esp_err_t err = sd_write_file(name_file, buff_sd);
+      |                                       ^~~~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:25:
+e:\23-5\mcu1\lib\sdcard.h:36:37: note: expected 'const char *' but argument is of type 'volatile char *'
+   36 | esp_err_t sd_write_file(const char *nameFile, char *format,...);
+      |                         ~~~~~~~~~~~~^~~~~~~~
+E:/23-5/mcu1/main/main.c:154:50: warning: passing argument 2 of 'sd_write_file' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  154 |         esp_err_t err = sd_write_file(name_file, buff_sd);
+      |                                                  ^~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:25:
+e:\23-5\mcu1\lib\sdcard.h:36:53: note: expected 'char *' but argument is of type 'volatile char *'
+   36 | esp_err_t sd_write_file(const char *nameFile, char *format,...);
+      |                                               ~~~~~~^~~~~~
+In file included from E:/23-5/mcu1/main/main.c:28:
+E:/23-5/mcu1/main/main.c: At top level:
+e:\23-5\mcu1\lib\myph.h:56:14: warning: 'convert_ADC_voltage' declared 'static' but never defined [-Wunused-function]
+   56 | static float convert_ADC_voltage(uint32_t ADC, uint32_t resolution, float V_ref);
+      |              ^~~~~~~~~~~~~~~~~~~
+E:/23-5/mcu1/main/main.c:129:13: warning: 'GPS' defined but not used [-Wunused-function]
+  129 | static void GPS(void *pvParameters)
+      |             ^~~
+In file included from E:/23-5/mcu1/main/main.c:25:
+e:\23-5\mcu1\lib\sdcard.h:28:21: warning: 'SD_TAG' defined but not used [-Wunused-variable]
+   28 | static const char * SD_TAG = "SD Card";
+      |                     ^~~~~~
+ninja: build stopped: subcommand failed.

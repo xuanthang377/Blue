@@ -1,0 +1,208 @@
+[1/13] cmd.exe /C "cd /D E:\23-5\mcu1\build && E:\Student\Software\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/spiffsgen.py 0x10000 E:/23-5/mcu1/icons E:/23-5/mcu1/build/storage1.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[2/13] cmd.exe /C "cd /D E:\23-5\mcu1\build && E:\Student\Software\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/spiffsgen.py 0x20000 E:/23-5/mcu1/font E:/23-5/mcu1/build/storage0.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[3/13] cmd.exe /C "cd /D E:\23-5\mcu1\build && E:\Student\Software\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spiffs/spiffsgen.py 0xb0000 E:/23-5/mcu1/images E:/23-5/mcu1/build/storage2.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[4/13] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D E:\23-5\mcu1\build\bootloader\esp-idf\esptool_py && E:\Student\Software\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/23-5/mcu1/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5030 bytes. 0x2fd0 bytes (37%) free.
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from E:/23-5/mcu1/main/main.c:16:
+E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+In file included from e:\23-5\mcu1\lib\myph.h:22,
+                 from E:/23-5/mcu1/main/main.c:28:
+E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:30:
+e:\23-5\mcu1\lib\ads1115.h:57:26: warning: excess elements in array initializer
+   57 | #define ADS111X_ADDR_VCC 0x49 //!< I2C device address with ADDR pin connected to VCC
+      |                          ^~~~
+E:/23-5/mcu1/main/main.c:63:5: note: in expansion of macro 'ADS111X_ADDR_VCC'
+   63 |     ADS111X_ADDR_VCC
+      |     ^~~~~~~~~~~~~~~~
+e:\23-5\mcu1\lib\ads1115.h:57:26: note: (near initialization for 'addr')
+   57 | #define ADS111X_ADDR_VCC 0x49 //!< I2C device address with ADDR pin connected to VCC
+      |                          ^~~~
+E:/23-5/mcu1/main/main.c:63:5: note: in expansion of macro 'ADS111X_ADDR_VCC'
+   63 |     ADS111X_ADDR_VCC
+      |     ^~~~~~~~~~~~~~~~
+E:/23-5/mcu1/main/main.c: In function 'measure':
+E:/23-5/mcu1/main/main.c:88:40: warning: passing argument 2 of 'ads111x_get_value' from incompatible pointer type [-Wincompatible-pointer-types]
+   88 |     if (ads111x_get_value(&devices[n], &raw) == ESP_OK)
+      |                                        ^~~~
+      |                                        |
+      |                                        int32_t * {aka long int *}
+In file included from E:/23-5/mcu1/main/main.c:30:
+e:\23-5\mcu1\lib\ads1115.h:217:54: note: expected 'int16_t *' {aka 'short int *'} but argument is of type 'int32_t *' {aka 'long int *'}
+  217 | esp_err_t ads111x_get_value(i2c_dev_t *dev, int16_t *value);
+      |                                             ~~~~~~~~~^~~~~
+E:/23-5/mcu1/main/main.c: In function 'sd_task':
+E:/23-5/mcu1/main/main.c:148:25: warning: passing argument 1 of 'sprintf' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  148 |                 sprintf(name_file, "log_3_7");
+      |                         ^~~~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:1:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\stdio.h:244:18: note: expected 'char * restrict' but argument is of type 'volatile char *'
+  244 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+E:/23-5/mcu1/main/main.c:151:25: warning: passing argument 1 of 'sprintf' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  151 |                 sprintf(name_file, "null.txt");
+      |                         ^~~~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:1:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\stdio.h:244:18: note: expected 'char * restrict' but argument is of type 'volatile char *'
+  244 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+E:/23-5/mcu1/main/main.c:153:16: warning: passing argument 1 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  153 |         strcpy(buff_sd, buff);
+      |                ^~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:2:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\string.h:38:18: note: expected 'char * restrict' but argument is of type 'volatile char *'
+   38 | char    *strcpy (char *__restrict, const char *__restrict);
+      |                  ^
+E:/23-5/mcu1/main/main.c:153:25: warning: passing argument 2 of 'strcpy' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  153 |         strcpy(buff_sd, buff);
+      |                         ^~~~
+In file included from E:/23-5/mcu1/main/main.c:2:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\string.h:38:36: note: expected 'const char * restrict' but argument is of type 'volatile char *'
+   38 | char    *strcpy (char *__restrict, const char *__restrict);
+      |                                    ^
+E:/23-5/mcu1/main/main.c:154:16: warning: passing argument 1 of 'strcat' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  154 |         strcat(buff_sd, "\n");
+      |                ^~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:2:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\string.h:34:18: note: expected 'char * restrict' but argument is of type 'volatile char *'
+   34 | char    *strcat (char *__restrict, const char *__restrict);
+      |                  ^
+E:/23-5/mcu1/main/main.c:156:39: warning: passing argument 1 of 'sd_write_file' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  156 |         esp_err_t err = sd_write_file(name_file, buff_sd);
+      |                                       ^~~~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:25:
+e:\23-5\mcu1\lib\sdcard.h:36:37: note: expected 'const char *' but argument is of type 'volatile char *'
+   36 | esp_err_t sd_write_file(const char *nameFile, char *format,...);
+      |                         ~~~~~~~~~~~~^~~~~~~~
+E:/23-5/mcu1/main/main.c:156:50: warning: passing argument 2 of 'sd_write_file' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  156 |         esp_err_t err = sd_write_file(name_file, buff_sd);
+      |                                                  ^~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:25:
+e:\23-5\mcu1\lib\sdcard.h:36:53: note: expected 'char *' but argument is of type 'volatile char *'
+   36 | esp_err_t sd_write_file(const char *nameFile, char *format,...);
+      |                                               ~~~~~~^~~~~~
+E:/23-5/mcu1/main/main.c: In function 'ds3231_task':
+E:/23-5/mcu1/main/main.c:257:13: warning: passing argument 1 of 'sprintf' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  257 |     sprintf(time_buff,"%04d|%02d|%02d|%02d|%02d|%02d",time.tm_year, time.tm_mon, time.tm_mday, time.tm_hour, time.tm_min, time.tm_sec);
+      |             ^~~~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:1:
+e:\student\software\espressif\tools\xtensa-esp32s3-elf\esp-2022r1-11.2.0\xtensa-esp32s3-elf\xtensa-esp32s3-elf\sys-include\stdio.h:244:18: note: expected 'char * restrict' but argument is of type 'volatile char *'
+  244 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+In file included from E:/23-5/mcu1/main/main.c:28:
+E:/23-5/mcu1/main/main.c: At top level:
+e:\23-5\mcu1\lib\myph.h:56:14: warning: 'convert_ADC_voltage' declared 'static' but never defined [-Wunused-function]
+   56 | static float convert_ADC_voltage(uint32_t ADC, uint32_t resolution, float V_ref);
+      |              ^~~~~~~~~~~~~~~~~~~
+In file included from E:/23-5/mcu1/main/main.c:25:
+e:\23-5\mcu1\lib\sdcard.h:28:21: warning: 'SD_TAG' defined but not used [-Wunused-variable]
+   28 | static const char * SD_TAG = "SD Card";
+      |                     ^~~~~~
+[6/11] Linking C static library esp-idf\main\libmain.a
+[7/11] Generating ld/sections.ld
+[8/11] Linking CXX executable ili9340.elf
+[9/11] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated E:/23-5/mcu1/build/ili9340.bin
+[10/11] cmd.exe /C "cd /D E:\23-5\mcu1\build\esp-idf\esptool_py && E:\Student\Software\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/23-5/mcu1/build/partition_table/partition-table.bin E:/23-5/mcu1/build/ili9340.bin"
+ili9340.bin binary size 0x44af0 bytes. Smallest app partition is 0x100000 bytes. 0xbb510 bytes (73%) free.
+[10/11] cmd.exe /C "cd /D E:\Student\Software\Espressif\frameworks\esp-idf-v5.0.2\components\esptool_py && E:\Student\Software\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2 -D SERIAL_TOOL=E:/Student/Software/Espressif/python_env/idf5.0_py3.11_env/Scripts/python.exe;;E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=E:/23-5/mcu1/build -P E:/Student/Software/Espressif/frameworks/esp-idf-v5.0.2/components/esptool_py/run_serial_tool.cmake"
+esptool esp32s3 -p COM21 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 ili9340.bin 0x8000 partition_table/partition-table.bin 0x110000 storage0.bin 0x130000 storage1.bin 0x140000 storage2.bin
+esptool.py v4.5.1
+Serial port COM21
+Connecting...
+Chip is ESP32-S3 (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 80:65:99:a3:2d:44
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00054fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00110000 to 0x0012ffff...
+Flash will be erased from 0x00130000 to 0x0013ffff...
+Flash will be erased from 0x00140000 to 0x001effff...
+Compressed 20528 bytes to 13062...
+Writing at 0x00000000... (100 %)
+Wrote 20528 bytes (13062 compressed) at 0x00000000 in 0.3 seconds (effective 517.2 kbit/s)...
+Hash of data verified.
+Compressed 281328 bytes to 156415...
+Writing at 0x00010000... (10 %)
+Writing at 0x0001d3e4... (20 %)
+Writing at 0x0002390d... (30 %)
+Writing at 0x00029b82... (40 %)
+Writing at 0x0002f3d4... (50 %)
+Writing at 0x00035137... (60 %)
+Writing at 0x0003b60e... (70 %)
+Writing at 0x0004498a... (80 %)
+Writing at 0x0004b480... (90 %)
+Writing at 0x0005141a... (100 %)
+Wrote 281328 bytes (156415 compressed) at 0x00010000 in 1.9 seconds (effective 1178.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 136...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (136 compressed) at 0x00008000 in 0.0 seconds (effective 522.7 kbit/s)...
+Hash of data verified.
+Compressed 131072 bytes to 18405...
+Writing at 0x00110000... (50 %)
+Writing at 0x00123306... (100 %)
+Wrote 131072 bytes (18405 compressed) at 0x00110000 in 0.7 seconds (effective 1427.7 kbit/s)...
+Hash of data verified.
+Compressed 65536 bytes to 21861...
+Writing at 0x00130000... (50 %)
+Writing at 0x001358c5... (100 %)
+Wrote 65536 bytes (21861 compressed) at 0x00130000 in 0.4 seconds (effective 1290.6 kbit/s)...
+Hash of data verified.
+Compressed 720896 bytes to 534655...
+Writing at 0x00140000... (3 %)
+Writing at 0x001452cb... (6 %)
+Writing at 0x00149f99... (9 %)
+Writing at 0x0014ee51... (12 %)
+Writing at 0x00154346... (15 %)
+Writing at 0x001594b5... (18 %)
+Writing at 0x0015e37e... (21 %)
+Writing at 0x0016324c... (24 %)
+Writing at 0x001682b3... (27 %)
+Writing at 0x0016d356... (30 %)
+Writing at 0x00172389... (33 %)
+Writing at 0x0017726c... (36 %)
+Writing at 0x0017c632... (39 %)
+Writing at 0x00180c2e... (42 %)
+Writing at 0x00185b4f... (45 %)
+Writing at 0x0018af03... (48 %)
+Writing at 0x0019024d... (51 %)
+Writing at 0x001952fb... (54 %)
+Writing at 0x0019a286... (57 %)
+Writing at 0x0019f32f... (60 %)
+Writing at 0x001a425b... (63 %)
+Writing at 0x001a9208... (66 %)
+Writing at 0x001adeda... (69 %)
+Writing at 0x001b327a... (72 %)
+Writing at 0x001b82a3... (75 %)
+Writing at 0x001bd510... (78 %)
+Writing at 0x001c1b83... (81 %)
+Writing at 0x001c5fe7... (84 %)
+Writing at 0x001ca785... (87 %)
+Writing at 0x001ceca1... (90 %)
+Writing at 0x001d32aa... (93 %)
+Writing at 0x001d79a7... (96 %)
+Writing at 0x001dbf1f... (100 %)
+Wrote 720896 bytes (534655 compressed) at 0x00140000 in 4.9 seconds (effective 1166.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
